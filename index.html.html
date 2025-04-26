@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento Biomédico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Expertos en Mantenimiento Biomédico</h1>
+        <p>Garantizamos el buen funcionamiento de tus equipos médicos</p>
+    </section>
+
+    <section id="servicios" class="section">
+        <h2>Nuestros Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/mantenimiento.jpg" alt="Mantenimiento">
+                <h3>Mantenimiento Preventivo</h3>
+                <p>Revisamos periódicamente tus equipos para evitar fallas.</p>
+            </div>
+            <div class="card">
+                <img src="images/tecnico.jpg" alt="Técnico">
+                <h3>Correctivo</h3>
+                <p>Reparamos fallas y devolvemos tus equipos a óptimo estado.</p>
+            </div>
+            <div class="card">
+                <img src="images/equipo.jpg" alt="Equipo">
+                <h3>Calibración</h3>
+                <p>Calibración con equipos certificados y técnicos capacitados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos una empresa especializada en el mantenimiento de equipos biomédicos, con años de experiencia en clínicas y hospitales.</p>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contáctanos</h2>
+        <form action="php/contacto.php" method="POST" id="formContacto">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mantenimiento Biomédico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
