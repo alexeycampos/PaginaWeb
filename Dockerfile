@@ -1,17 +1,14 @@
-# Usar una imagen de PHP con Apache preinstalado
+# Usa una imagen oficial de PHP con Apache
 FROM php:8.1-apache
 
-# Copiar los archivos al directorio donde Apache los servirá
+# Copia los archivos de tu proyecto al contenedor
 COPY . /var/www/html/
 
-# Habilitar mod_rewrite (si es necesario)
+# Habilita el módulo de reescritura de Apache
 RUN a2enmod rewrite
 
-# Cambiar los permisos de los archivos para que Apache pueda acceder a ellos
-RUN chown -R www-data:www-data /var/www/html
-
-# Exponer el puerto 80 de Apache
+# Expón el puerto 80, que es el predeterminado para Apache
 EXPOSE 80
 
-# Iniciar Apache
+# Comando para iniciar Apache en primer plano
 CMD ["apache2-foreground"]
